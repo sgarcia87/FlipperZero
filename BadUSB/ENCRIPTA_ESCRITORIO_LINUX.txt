@@ -1,4 +1,4 @@
-# Bomba logica creada por Sergigm87
+# Encripta escritorio Linux. Script creado por Sergigm87
 REM Este es un script Ducky para Linux
 DELAY 1000
 REM Minimiza todas las ventanas
