@@ -1,4 +1,4 @@
-# Encripta el escritorio de Windows. Requiere PASSWORD. Script creado por Sergigm87
+REM Encripta el escritorio de Windows. Requiere PASSWORD. Script creado por Sergigm87
 DELAY 1000
 REM Abre PowerShell como administrador
 WINDOWS r
