@@ -1,4 +1,4 @@
-# Script hecho por Sergigm87 con la finalidad de hacer una broma y el TV Samsung muestre la pantalla de PIN
+REM Script hecho por Sergigm87 con la finalidad de hacer una broma y el TV Samsung muestre la pantalla de PIN
 REM Este es un script Ducky para una Android TV
 DELAY 5000
 WINDOWS
